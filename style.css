@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--secondary-color) url('./images/tim-toomey.jpg') center / contain no-repeat fixed;
+    background: var(--secondary-color) url('./images/tim-toomey.jpg') 75% / contain no-repeat fixed;
     color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
 }
@@ -22,6 +22,22 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.font-montecarlo {
+    font-family: 'MonteCarlo', cursive;
+}
+
+.mb-1gap {
+    margin-bottom: 10px;
+}
+
+.mb-2gap {
+    margin-bottom: 20px;
+}
+
+.mb-3gap {
+    margin-bottom: 30px;
 }
 
 nav {
@@ -63,10 +79,115 @@ nav ul li:nth-child(3):hover{
 }
 
 .logo {
-    font-family: 'MonteCarlo', cursive;
     font-size: 35px;
 }
 
 .project-image {
     width: 200px;
+}
+
+.main-container {
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-15%);
+}
+
+.intro {
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.heading {
+    font-size: 18px;
+}
+
+.heading-large {
+    font-size: 43.95px;
+}
+
+.heading-medium {
+    font-size: 28.13px;
+}
+
+u {
+    background: -webkit-linear-gradient(var(--secondary-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 2190px) {
+    body {
+        background-color: green;
+    }
+
+    .main-container {
+        transform: translateX(-15%);
+    }
+
+    body {
+        background: var(--secondary-color) url('./images/tim-toomey.jpg') 90% / contain no-repeat fixed;
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    body {
+        background: var(--secondary-color) url('./images/tim-toomey.jpg') 100% / contain no-repeat fixed;
+    }
+}
+
+@media screen and (max-width: 1670px) {
+    .main-container {
+        transform: translateX(-25%);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        background: var(--secondary-color) url('./images/tim-toomey.jpg') 130% / contain no-repeat fixed;
+    }
+
+    .intro {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        background: var(--secondary-color) url('./images/tim-toomey.jpg') 0 / contain no-repeat fixed;
+    }
+
+    .main-container {
+        transform: none;
+    }
+
+    .intro {
+        text-align:left;
+        width: 500px;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 5px 0 20px var(--primary-color);
+        background: var(--secondary-color);
+    }
 }
