@@ -1,5 +1,5 @@
 # codedamn-Techspert-Hunt-stage1
-1)Project name: simple portfolio
+1)Project name: simple portfolio | live at : https://kaushal297.github.io/codedamn-Techspert-Hunt-stage1/
 
 2)Project Idea: just a simple plain portfolio with the picture and some description (Theme: black & white)
 
